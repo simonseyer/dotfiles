@@ -2,10 +2,14 @@
 
 - link:
     ~/.gitconfig: gitconfig
+    ~/.gitconfig_private: gitconfig_private
+    ~/.gitignore_global: gitignore_global
     ~/.ssh/config:
         path: ssh/config
         create: true
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
-
-
+    ~/Brewfile: Brewfile
+    ~/.config/1Password/ssh/agent.toml:
+        path: "1Password/ssh/agent.toml"
+        create: true
