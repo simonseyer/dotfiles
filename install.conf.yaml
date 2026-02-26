@@ -1,19 +1,13 @@
 - clean: ['~']
 
 - shell:
-    - command: |
-        if ! command -v brew &>/dev/null; then
-          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-        fi
+    - command: sh scripts/install_homebrew.sh
       description: Install Homebrew
       stdout: true
       stderr: true
       stdin: true 
 
-    - command: |
-        if [ ! -d "$HOME/.oh-my-zsh" ]; then
-          sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-        fi
+    - command: sh scripts/install_oh_my_zsh.sh
       description: Install Oh My Zsh
       stdout: true
       stderr: true
@@ -38,20 +32,13 @@
       stdout: true
       stderr: true
 
-- shell:
-    - command: |
-        if [ ! -d "/Library/Keyboard Layouts/Roman.bundle" ]; then
-          echo "Installing USGerman keyboard layout..."
-          unzip -q USGermanKeyboardLayout.zip -d /tmp/USGerman
-          sudo cp -R /tmp/USGerman/*/Roman.bundle "/Library/Keyboard Layouts/"
-          rm -rf /tmp/USGerman
-          echo "✓ USGerman keyboard layout installed"
-          echo "⚠ Remember to: System Settings → Keyboard → Input Sources → + → Others → U.S. With Umlauts via Option Key"
-          echo "⚠ Log out and back in once to activate it fully"
-        else
-          echo "✓ USGerman keyboard layout already installed"
-        fi
+    - command: sh scripts/install_keyboard_layout.sh
       description: Install USGerman keyboard layout
       stdout: true
       stderr: true
       stdin: true
+      
+    - command: sh scripts/apply_defaults.sh
+      description: Set macOS defaults
+      stdout: true
+      stderr: true
