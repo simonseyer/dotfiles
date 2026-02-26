@@ -14,3 +14,8 @@
 	excludesfile = /Users/sise/.gitignore_global
 [includeIf "gitdir:~/Developer/_Private/"]
   path = ~/.gitconfig_private
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
