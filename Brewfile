@@ -118,4 +118,3 @@ mas "Reeder", id: 1529448980
 mas "Skitch", id: 425955336
 mas "Spark", id: 1176895641
 mas "WhatsApp", id: 310633997
-mas "SF Symbols", id: 1402243590
