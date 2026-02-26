@@ -1,0 +1,16 @@
+[user]
+	name = Seyer, Simon
+	email = simon.seyer@zuhlke.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIF+0UjgWcYaAGW3kwgDNeBDBK17tYWEjUSQ/eNrnKqVl
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true
+[credential]
+	helper = osxkeychain
+[core]
+	excludesfile = /Users/sise/.gitignore_global
+[includeIf "gitdir:~/Developer/_Private/"]
+  path = ~/.gitconfig_private
