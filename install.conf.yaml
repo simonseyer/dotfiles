@@ -1,5 +1,23 @@
 - clean: ['~']
 
+- shell:
+    - command: |
+        if ! command -v brew &>/dev/null; then
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        fi
+      description: Install Homebrew
+      stdout: true
+      stderr: true
+      stdin: true 
+
+    - command: |
+        if [ ! -d "$HOME/.oh-my-zsh" ]; then
+          sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+        fi
+      description: Install Oh My Zsh
+      stdout: true
+      stderr: true
+
 - link:
     ~/.gitconfig: gitconfig
     ~/.gitconfig_private: gitconfig_private
@@ -9,7 +27,13 @@
         create: true
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
-    ~/Brewfile: Brewfile
+    ~/.Brewfile: Brewfile
     ~/.config/1Password/ssh/agent.toml:
         path: "1Password/ssh/agent.toml"
         create: true
+
+- shell:
+    - command: brew bundle install --global --upgrade
+      description: Install Brewfile packages
+      stdout: true
+      stderr: true

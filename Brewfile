@@ -90,8 +90,6 @@ cask "jetbrains-toolbox"
 cask "mongodb-compass"
 # App to write, plan, collaborate, and get organised
 cask "notion"
-# Cloud storage client
-cask "pcloud-drive"
 # Emoji picker
 cask "rocket"
 # Instant messaging application focusing on security
