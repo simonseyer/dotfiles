@@ -8,7 +8,7 @@
 	helper = osxkeychain
 [core]
 	excludesfile = /Users/sise/.gitignore_global
-[includeIf "gitdir:~/Developer/GithHub/"]
+[includeIf "gitdir:~/Developer/GitHub/"]
   path = ~/.gitconfig_github
 [includeIf "gitdir:~/Developer/CodeHub/"]
   path = ~/.gitconfig_codehub
