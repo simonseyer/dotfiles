@@ -36,7 +36,7 @@ export KUBE_EDITOR="subl -w"
 # ------------------------------------------------------------
 # Aliases
 # ------------------------------------------------------------
-alias subl="/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 # ------------------------------------------------------------
 # VS Code shell integration

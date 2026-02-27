@@ -14,7 +14,9 @@
 
 - link:
     ~/.gitconfig: gitconfig
-    ~/.gitconfig_private: gitconfig_private
+    ~/.gitconfig_github: gitconfig_github
+    ~/.gitconfig_codehub: gitconfig_codehub
+    ~/.gitconfig_bitbucket: gitconfig_bitbucket
     ~/.gitignore_global: gitignore_global
     ~/.ssh/config:
         path: ssh/config
@@ -25,6 +27,11 @@
     ~/.config/1Password/ssh/agent.toml:
         path: "1Password/ssh/agent.toml"
         create: true
+
+- create:
+    - ~/Developer/GitHub
+    - ~/Developer/CodeHub
+    - ~/Developer/Bitbucket
 
 - shell:
     - command: brew bundle install --global --upgrade

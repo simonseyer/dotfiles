@@ -1,7 +1,3 @@
-[user]
-	name = Seyer, Simon
-	email = simon.seyer@zuhlke.com
-	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIF+0UjgWcYaAGW3kwgDNeBDBK17tYWEjUSQ/eNrnKqVl
 [gpg]
 	format = ssh
 [gpg "ssh"]
@@ -12,8 +8,14 @@
 	helper = osxkeychain
 [core]
 	excludesfile = /Users/sise/.gitignore_global
-[includeIf "gitdir:~/Developer/_Private/"]
-  path = ~/.gitconfig_private
+[includeIf "gitdir:~/Developer/GithHub/"]
+  path = ~/.gitconfig_github
+[includeIf "gitdir:~/Developer/CodeHub/"]
+  path = ~/.gitconfig_codehub
+[includeIf "gitdir:~/Developer/Bitbucket/"]
+  path = ~/.gitconfig_bitbucket
+[includeIf "gitdir:~/.dotfiles/"]
+  path = ~/.gitconfig_github
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
