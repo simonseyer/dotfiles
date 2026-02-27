@@ -1,6 +1,6 @@
 # dotfiles
 
-> Deactivate licenses before wiping (Numi, AirBudy, DevUtils, …)
+> Deactivate licenses before wiping (Numi, AirBudy, DevUtils, Alfred, …)
 
 `./install`
 
