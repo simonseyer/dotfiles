@@ -22,7 +22,9 @@
         path: ssh/config
         create: true
     ~/.zprofile: zprofile
-    ~/.zshrc: zshrc
+    ~/.zshrc:
+        path: zshrc
+        force: true
     ~/.Brewfile: Brewfile
     ~/.config/1Password/ssh/agent.toml:
         path: "1Password/ssh/agent.toml"

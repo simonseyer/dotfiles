@@ -4,6 +4,6 @@
 
 `./install`
 
-## pCloud
-pCloud is not available via Homebrew, download manually from:
-https://www.pcloud.com/downloads/osx/pcloud
+## Other Software
+* [pCloud](https://www.pcloud.com/downloads/osx/pcloud)
+* [Affinity Photo](https://store.serif.com/en-us/update/macos/photo/1/)

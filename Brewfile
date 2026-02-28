@@ -84,8 +84,6 @@ cask "figma"
 cask "github"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
-# Meet, chat, call, and collaborate in just one place
-# cask "microsoft-teams" -> Intelligent Hub
 # GUI tool for MongoDB
 cask "mongodb-compass"
 # App to write, plan, collaborate, and get organised
@@ -102,18 +100,12 @@ cask "teleport-connect"
 cask "webex"
 # Open-source code editor
 cask "visual-studio-code"
-mas "Affinity Photo", id: 824183456
+# mas "Affinity Photo", id: 824183456 -> not available on App Store anymore
 mas "AusweisApp", id: 948660805
 mas "Bear", id: 1091189122
-# mas "Bitwarden", id: 1352778147 -> Intelligent Hub
 mas "DevCleaner", id: 1388020431
 mas "Magnet", id: 441258766
 mas "Mattermost", id: 1614666244
-# mas "Microsoft Excel", id: 462058435 -> Intelligent Hub
-# mas "Microsoft Outlook", id: 985367838 -> Intelligent Hub
-# mas "Microsoft PowerPoint", id: 462062816 -> Intelligent Hub
-# mas "Microsoft Word", id: 462054704 -> Intelligent Hub
-# mas "OneDrive", id: 823766827 -> Intelligent Hub
 mas "Reeder", id: 1529448980
 mas "Skitch", id: 425955336
 mas "Spark", id: 1176895641

@@ -28,6 +28,12 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # ------------------------------------------------------------
+# Homebrew
+# ------------------------------------------------------------
+export HOMEBREW_BUNDLE_FILE="$HOME/.dotfiles/Brewfile"
+export HOMEBREW_BUNDLE_NO_LOCK=1
+
+# ------------------------------------------------------------
 # Editor
 # ------------------------------------------------------------
 export EDITOR="subl -w"
