@@ -34,6 +34,11 @@ export EDITOR="subl -w"
 export KUBE_EDITOR="subl -w"
 
 # ------------------------------------------------------------
+# Brew
+# ------------------------------------------------------------
+alias brewdump='brew bundle dump --file=- | grep -v -f "$HOME/.dotfiles/Brewignore" > "$HOME/.dotfiles/Brewfile"'
+
+# ------------------------------------------------------------
 # Aliases
 # ------------------------------------------------------------
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
