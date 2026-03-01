@@ -32,6 +32,7 @@ brew "mise"
 brew "openshift-cli"
 # Tool for managing OCI containers and pods
 brew "podman"
+brew "podman-compose"
 # Perl-powered file rename script with many helpful built-ins
 brew "rename"
 # Display directories as trees (with optional color/HTML output)
@@ -49,7 +50,7 @@ brew "nikolaeu/numi/numi-cli"
 # All-in-one toolbox for developers
 cask "devutils"
 # Utility to hide menu bar items
-cask "hiddenbar"
+cask "thaw"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Calculator and converter application
