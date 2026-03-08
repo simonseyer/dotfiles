@@ -48,3 +48,8 @@ alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 # Enables terminal features inside VS Code (links, exit codes)
 # ------------------------------------------------------------
 [[ "$TERM_PROGRAM" == "vscode" ]] && source "$(code --locate-shell-integration-path zsh)"
+
+# ------------------------------------------------------------
+# mise
+# ------------------------------------------------------------
+eval "$(mise activate zsh)"
