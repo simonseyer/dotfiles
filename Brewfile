@@ -34,7 +34,6 @@ cask "claude"
 cask "devutils"
 cask "figma"
 cask "github"
-cask "iterm2"
 cask "jetbrains-toolbox"
 cask "mongodb-compass"
 cask "notion"
@@ -61,3 +60,4 @@ mas "Skitch", id: 425955336
 mas "Spark", id: 1176895641
 mas "WhatsApp", id: 310633997
 vscode "github.copilot-chat"
+vscode "vscjava.vscode-gradle"
