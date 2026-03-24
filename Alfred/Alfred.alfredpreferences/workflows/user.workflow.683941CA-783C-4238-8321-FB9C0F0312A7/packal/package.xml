@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<workflow>
+  <name>Clean Derived Data</name>
+  <version>1.0</version>
+  <bundle>me.colindrake.alfredapp.clean-derived</bundle>
+  <updated>1467658520</updated>
+  <file>clean_derived_data.alfredworkflow</file>
+</workflow>

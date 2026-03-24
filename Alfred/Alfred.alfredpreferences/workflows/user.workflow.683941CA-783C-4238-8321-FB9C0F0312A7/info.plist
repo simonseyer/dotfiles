@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>me.colindrake.alfredapp.clean-derived</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>2D5399B5-BE5E-47AD-98D2-9964C8195783</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6611BD82-1035-4DD4-8138-56C5BE7420BC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>6611BD82-1035-4DD4-8138-56C5BE7420BC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1775DCAE-0C87-494D-B0D9-1B395DC34ACE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Colin Drake</string>
+	<key>description</key>
+	<string>Cleans Xcode's Derived Data folder. Icon thanks to Huu Nguyen (https://thenounproject.com/term/delete/30090).</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Clean Derived Data</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>clean derived</string>
+				<key>subtext</key>
+				<string>Cleans Xcode's Derived Data folder.</string>
+				<key>text</key>
+				<string>Clean Xcode Derived Data</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>2D5399B5-BE5E-47AD-98D2-9964C8195783</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Done</string>
+				<key>title</key>
+				<string>Clean Derived Data</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>1775DCAE-0C87-494D-B0D9-1B395DC34ACE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>rm -rf ~/Library/Developer/Xcode/DerivedData</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>6611BD82-1035-4DD4-8138-56C5BE7420BC</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>1775DCAE-0C87-494D-B0D9-1B395DC34ACE</key>
+		<dict>
+			<key>xpos</key>
+			<real>425</real>
+			<key>ypos</key>
+			<real>120</real>
+		</dict>
+		<key>2D5399B5-BE5E-47AD-98D2-9964C8195783</key>
+		<dict>
+			<key>xpos</key>
+			<real>100</real>
+			<key>ypos</key>
+			<real>120</real>
+		</dict>
+		<key>6611BD82-1035-4DD4-8138-56C5BE7420BC</key>
+		<dict>
+			<key>xpos</key>
+			<real>260</real>
+			<key>ypos</key>
+			<real>120</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>webaddress</key>
+	<string>http://colindrake.me</string>
+</dict>
+</plist>
