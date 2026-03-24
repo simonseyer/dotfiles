@@ -17,6 +17,7 @@ brew "mongosh"
 brew "openshift-cli"
 brew "podman"
 brew "podman-compose"
+brew "pre-commit"
 brew "rename"
 brew "tree"
 brew "wget"
@@ -55,9 +56,12 @@ mas "Bear", id: 1091189122
 mas "DevCleaner", id: 1388020431
 mas "Magnet", id: 441258766
 mas "Mattermost", id: 1614666244
+mas "Pages", id: 361309726
 mas "Reeder", id: 1529448980
 mas "Skitch", id: 425955336
 mas "Spark", id: 1176895641
 mas "WhatsApp", id: 310633997
 vscode "github.copilot-chat"
 vscode "vscjava.vscode-gradle"
+go "cmd/go"
+go "cmd/gofmt"
